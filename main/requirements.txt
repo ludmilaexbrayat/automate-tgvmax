@@ -1,0 +1,8 @@
+{
+  "name": "TGVMax",
+  "version": "1.0.0",
+  "description": "Booking a TGVMax",
+  "dependencies": {
+    "puppeteer": "^1.9.0"
+  }
+}

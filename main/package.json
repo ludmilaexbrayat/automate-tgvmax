@@ -1,0 +1,8 @@
+{
+  "name": "TGVMax",
+  "version": "1.0.0",
+  "description": "TGVMax Script",
+  "dependencies": {
+    "puppeteer": "^1.9.0"
+  }
+}
