@@ -5,8 +5,8 @@ function _calculateAge(birthday) {
 }
 
 const information = {
-	'gareDepart': 'Montpellier',
-	'gareArrivee': 'Paris',
+	'DepartureStation': 'Briançon',
+	'ArrivalStation': 'Paris',
 	'numero_carte': '000000000',
 	'dayBirth': '01',
 	'monthBirth': '01',

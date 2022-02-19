@@ -1,0 +1,11 @@
+To launch the script: 
+- Open terminal
+- Navigate to the main folder
+- Run `node index.js`
+
+
+# Bypassing recaptcha:
+I'm using this package: puppeteer-extra-plugin-stealth.
+https://www.npmjs.com/package/puppeteer-extra-plugin-stealth
+
+I had to install two new packages (detailed in the "install" section in the website linked above).
