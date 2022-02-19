@@ -1,16 +1,13 @@
 const userInformation = require('./userInformation').information;
 
-const url = "https://www.sncf-connect.com/";
+// const url = "https://www.sncf-connect.com/";
 // const url = "https://www.sncf-connect.com/app/home/search";
-// const url = "https://www.thetrainline.com/fr";
+const url = "https://www.thetrainline.com/fr";
 
 const location = {
-	'closeCookie': '#didomi-notice-agree-button',
-	'closeSurvey': '#nogo',
-	'searchBox': '#userInput',
-	'launchSearch': '#userInput-submit'
-	// 'closeBot': '#js__ouibot-ancrage__close',
-	// 'gareDepart': '#vsb-origin-train-launch',
+	'closeCookie': '#onetrust-accept-btn-handler',
+	'searchTo':'#from\\.search',
+	'searchFrom': '#to\\.search',
 	// 'selectGareDepart': '#vsb-origin-0',
 	// 'gareArrivee': '#vsb-destination-train-launch',
 	// 'selectGareArrivee': '#vsb-destination-0',
