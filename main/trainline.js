@@ -23,18 +23,34 @@ async function run () {
     console.log('Closed cookie');
 
     // Step 3 - Start search
-    await page.waitFor(pageLocation['searchTo']);
-    await page.click(pageLocation['searchTo']);
-    await page.waitFor(500);
+    // await page.waitFor(pageLocation['searchTo']);
+    // await page.click(pageLocation['searchTo']);
     // await page.type(pageLocation['searchTo'], userInformation['departureStation']); 
     // console.log('Typed departure station');
 
     // await page.waitFor(pageLocation['searchFrom']);
-    // // await page.waitFor(500);
     // await page.click(pageLocation['searchFrom']);
     // await page.type(pageLocation['searchFrom'], userInformation['arrivalStation']); 
     // console.log('Typed arrival station');
-    // await page.waitFor(10000);
+
+    // Scroll down half the page
+    await page.evaluate( () => {
+                window.scrollBy(0, 0.5 * window.innerHeight);
+            }); // Should do a loop
+    console.log('Scrolled down the page');
+    
+    // await page.focus(pageLocation['searchDate']);
+    // await page.type(pageLocation['searchFrom'], '20220220');
+    // await page.waitFor(pageLocation['searchDate']);
+    // await page.click(pageLocation['searchDate']);
+    // await page.waitFor(pageLocation['pickDate']);
+    // await page.click(pageLocation['pickDate']);
+    await page.waitFor('#cdf2b882-e71a-4648-bf9f-63004acb0ed2');
+    console.log('found it')
+    await page.select('#cdf2b882-e71a-4648-bf9f-63004acb0ed2', '08');
+    // await page.click(pageLocation['searchHour']);
+    // await page.type(pageLocation['searchHour'], '08'); 
+    console.log('Typed arrival station');
 
     // Step 5 - Check if pop up for survey is visible
     // if (survey) {

@@ -7,7 +7,11 @@ const url = "https://www.thetrainline.com/fr";
 const location = {
 	'closeCookie': '#onetrust-accept-btn-handler',
 	'searchTo':'#from\\.search',
-	'searchFrom': '#to\\.search',
+	'searchFrom':'#to\\.search',
+	'searchDate':'#page\\.journeySearchForm\\.outbound\\.title',
+	'pickDate': "//td[@data-test='2022-03-01']",
+	'searchHour':"//select[@name='hours']",
+	'searchTime':'#minutes'
 	// 'selectGareDepart': '#vsb-origin-0',
 	// 'gareArrivee': '#vsb-destination-train-launch',
 	// 'selectGareArrivee': '#vsb-destination-0',
@@ -29,7 +33,6 @@ const location = {
 	// 'prices0': "//span[@data-price='0' and @data-auto='DATA_PRICE_BTN_PRICEBTN_SECOND']",
 	// 'afficherTrajetsSuivants': "//span[@data-auto='LINK_TRAVEL_NEXT_HOUR']",
 	// 'jeChoisisCetAller': "//button[@class='oui-button___3560 travel-card__submit']",
-	// 'jeValidePlacement': "//button[@class='oui-button___3560 oui-button__placement']",
 	// 'continuer1': "//button[@class='oui-button___3635 oui-button--medium___3635']",
 	// 'continuer2': "//button[@class='oui-button___3635 cart-page__cta']",
 	// 'checkBox': "//span[contains(@class, 'oui-checkbox__selector')]",
